@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 200%;/*行距*/
+}
+.tob{
+    position: fixed;/*元素盒子始终置顶*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    width: 100%;/*横向占据比例*/
+    height: 60px;/*底色高度*/
+    z-index: 1;
+    box-shadow: 3px 3px 5px 1px #dadada;/*阴影设置*/
+}/*顶部样式表*/
+.menu{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 15%;
+}/*菜单样式表*/
+.logo{
+    flex: 1 1 auto;
+    margin-left: 10%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 35px;
+}/*LOGO样式表*/
+a{
+    margin: 15px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+}/*菜单文本样式表*/
+a:hover{
+    color: #000000;
+}/*鼠标指针事件样式表*/
+.black{
+     position: relative;
+     background-image: url(background.jpg);/*背景图片路径要跟css文件同一个文件夹*/
+     width: 100%;
+     height: 85vh;
+     background-repeat: no-repeat;
+     background-size: cover;  
+}/*主页背景样式表*/
+li:hover{
+    transform: translateY(-5px);/*向上位移距离*/
+    transition-duration: 0.5s;/*展示时间*/
+}/*鼠标指针位移事件样式表*/
+.about-one, .port-two, .serv-three{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+}/*正文样式表*/
+.text{
+    width: 65%;
+    height: 90%;
+    padding-top: 8vh;
+}/*正文文本样式表*/
+h1{
+    font-size: 30px;
+}
+.one{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    width: 100%;/*横向占据比例*/
+    height: 15vh;/*底色高度*/
+    z-index: 1;
+    box-shadow: 3px 3px 5px 1px #dadada;/*阴影设置*/
+}/*主页页尾样式表（同顶部样式表）*/
+.cont-four{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}/*正文第四段样式表*/
+.left{
+    float: left;/*左列*/
+    width: 40%;/*45%宽度*/
+    background: #dadada;
+    padding: 5vh;/*填充增加5vh单位盒子*/
+}/*第四段左列样式表*/
+.right{
+    float: right;/*右列*/
+    width: 40%;/*45%宽度*/
+    background: #dadada;/*背景颜色*/
+    padding: 5vh;/*填充增加5vh单位盒子*/
+}/*第四段右列样式表*/
+.test{
+    color: red;/*字体颜色*/
+}/*测试字体*/
+.about-one, .serv-three{
+    background: #ffffff;
+}
+.port-two{
+    background: #dadada;
+}
+p, br{
+    text-indent: 35px;
+}
