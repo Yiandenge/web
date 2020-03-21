@@ -1,10 +1,13 @@
+html{
+    font-size: 100%;
+}
 body{
     margin: 0;
     padding: 0;
     line-height: 200%;/*行距*/
 }
 .tob{
-    position: fixed;/*元素盒子始终置顶*/
+    position: fixed;/*元素盒子始终粘性悬浮置顶*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,9 +15,9 @@ body{
     flex-wrap: wrap;
     background-color: #ffffff;
     width: 100%;/*横向占据比例*/
-    height: 60px;/*底色高度*/
+    height: 5rem;/*底色高度*/
     z-index: 1;
-    box-shadow: 3px 3px 5px 1px #dadada;/*阴影设置*/
+    box-shadow: 0em 0.3em 0.5em 0.1em #dadada;/*阴影设置*/
 }/*顶部样式表*/
 .menu{
     display: flex;
@@ -26,12 +29,13 @@ body{
     flex: 1 1 auto;
     margin-left: 10%;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 2rem;
+    min-width: 10rem;
 }/*LOGO样式表*/
 a{
-    margin: 15px;
+    margin: 1em;
     color: #000000;
     text-decoration: none;
     text-transform: uppercase;
@@ -45,7 +49,7 @@ a:hover{
      width: 100%;
      height: 85vh;
      background-repeat: no-repeat;
-     background-size: cover;  
+     background-size: cover; 
 }/*主页背景样式表*/
 li:hover{
     transform: translateY(-5px);/*向上位移距离*/
@@ -68,21 +72,23 @@ li:hover{
     padding-bottom: 5vh;
 }/*正文文本样式表*/
 h1{
-    font-size: 30px;
+    font-size: 2em;
+    text-shadow: 0.2em 0.2em 0.3em #bebebe;
 }
 .one{
-    position: sticky;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: #ffffff;
-    width: 100%;/*横向占据比例*/
-    height: 15vh;/*底色高度*/
-    z-index: 1;
-    box-shadow: 3px 3px 5px 1px #dadada;/*阴影设置*/
+    margin-top: 2em;
 }/*主页页尾样式表（同顶部样式表）*/
+.textH1{
+    color: #ffffff;
+    text-shadow: 0.1em 0.1em 0.2em #dadada;
+}
+.one :hover{
+    color: #000000;
+    text-shadow: 0.1em 0.1em 0.3em #dadada;
+}
 .cont-four{
     position: relative;
     display: flex;
@@ -95,16 +101,17 @@ h1{
     float: left;/*左列*/
     width: 40%;/*45%宽度*/
     background: #dadada;
-    padding: 5vh;/*填充增加5vh单位盒子*/
+    border: 2rem solid #dadada;
 }/*第四段左列样式表*/
 .right{
     float: right;/*右列*/
     width: 40%;/*45%宽度*/
     background: #dadada;/*背景颜色*/
-    padding: 5vh;/*填充增加5vh单位盒子*/
+    border: 2rem solid #dadada;
 }/*第四段右列样式表*/
-.test{
-    color: red;/*字体颜色*/
+.test-a :hover{
+    color: rgb(128, 128, 128);/*字体颜色*/
+    text-shadow: 0.2em 0.2em 0.3em #cccccc;
 }/*测试字体*/
 .about-one, .serv-three{
     background: #ffffff;
@@ -121,6 +128,8 @@ p, br{
 }
 .DJI{
     border: 5vh solid  #ffffff;
+    width: 100%;
+    float: right;
 }
 .video-text{
     display: flex;
