@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>测试网站·标题</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="css/black.css">
 </head>
 <body>
     <div class="tob">
-        <a href="#" class="logo">yiandenge</a>
+        <a href="#" class="logo">网站版本号&nbsp;&nbsp;&nbsp;0.1</a>
         <ul class="menu">
-            <li><a href="#home">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#portfolio">portfolio</a></li>
-            <li><a href="#services">services</a></li>
-            <li><a href="#contact">contact</a></li>
-            <li><a href="#video">video</a></li>
+            <li><a href="#home" class="home">主页</a></li>
+            <li><a href="#about" class="home">关于</a></li>
+            <li><a href="#portfolio" class="home">内容</a></li>
+            <li><a href="#services" class="home">服务</a></li>
+            <li><a href="#contact" class="home">联系</a></li>
+            <li><a href="#video" class="home">VLOG</a></li>
         </ul>
     </div>
     <div class="black" id="home"></div>
@@ -147,8 +147,8 @@
         </div>
     </div>
     <div class="cont-four" id="contact">
-        <div class="text">
-            <dt class="left">
+        <div class="text-four">
+            <div class="left">
                 <h1>Overseas Chinese get help from physicians back home<a class="test-a">test</a></h1>
                 <p>With China getting the COVID-19 epidemic under control, more Chinese doctors here have joined hands to help the global community, especially overseas Chinese, better contain the fast-spreading pandemic.
 
@@ -173,8 +173,8 @@
                 "Many Chinese here previously contacted me and tried to fly back to China for fear of the fast-spreading pandemic in Europe. Now they said they felt at ease after consulting Zhao," said Zhang Jiabao, a Chinese resident of Venice.
                 
                 </p>
-            </dt>
-            <dt class="right">
+            </div>
+            <div class="right">
                 <h1>Overseas Chinese get help from physicians back home<a class="test-a">test</a></h1>
                 <p>With China getting the COVID-19 epidemic under control, more Chinese doctors here have joined hands to help the global community, especially overseas Chinese, better contain the fast-spreading pandemic.
 
@@ -199,62 +199,39 @@
                 "Many Chinese here previously contacted me and tried to fly back to China for fear of the fast-spreading pandemic in Europe. Now they said they felt at ease after consulting Zhao," said Zhang Jiabao, a Chinese resident of Venice.
                 
                 </p>
-            </dt>
+            </div>
         </div>
     </div>
     <div class="mp4" id="video">
-        <h1 class="video-text">大疆无人机晓</h1>
-        <video class="DJI" width="1280px" height="720px" controls>
-            <source src="mp4/大疆视频.mp4" type="video/mp4"><!--src=文件路径 type=标明文件类型-->
-            <source src="mp4/大疆视频.Ogg" type="video/Ogg">
-            <source src="mp4/大疆视频.webm" type="video/webm">
-            <source src="mp4/大疆视频.flv" type="video/flv">
-            <source src="mp4/大疆视频.mkv" type="video/mkv">
-            <source src="mp4/大疆视频.wmv" type="video/wmv">
-            <p>你的浏览器不支持MP4格式视频</p>
-        </video>
+        <div class="video-dji">
+            <div class="text-dji">
+                <p>MP4视频格式测试</p>
+                <p>大疆晓</p>
+                <video class="DJI" controls>
+                    <source src="mp4/大疆视频.webm" type="video/mp4"><!--src=文件路径 type=标明文件类型-->
+                    <p>你的浏览器不支持MP4格式视频</p>
+                </video>    
+            </div>
+        </div>
     </div>
-    <div class="mp4" id="video">
-        <h1 class="video-text">MP4</h1>
-        <video class="DJI" controls>
-            <source src="mp4/大疆视频.mp4" type="video/mp4"><!--src=文件路径 type=标明文件类型-->
-            <p>你的浏览器不支持MP4格式视频</p>
-        </video>
+</div>
+<div class="mp4" id="video">
+    <div class="video-dji">
+        <div class="text-dji">
+            <p>WOT-Webm格式测试</p>
+            <p>坦克世界IS-3 II双管视频</p>
+            <video class="DJI" controls>
+                <source src="mp4/WOT IS-3-II.webm" type="video/mp4"><!--src=文件路径 type=标明文件类型-->
+                <p>你的浏览器不支持MP4格式视频</p>
+            </video>    
+        </div>
     </div>
-    <div class="mp4" id="video">
-        <h1 class="video-text">OGG</h1>
-        <video class="DJI" controls>
-            <source src="mp4/大疆视频.Ogg" type="video/Ogg">
-            <p>你的浏览器不支持MP4格式视频</p>
-        </video>
-    </div>
-    <div class="mp4" id="video">
-        <h1 class="video-text">WEBM</h1>
-        <video class="DJI" controls>
-            <source src="mp4/大疆视频.webm" type="video/webm">
-            <p>你的浏览器不支持MP4格式视频</p>
-        </video>
-    </div>
-    <div class="mp4" id="video">
-        <h1 class="video-text">FLV</h1>
-        <video class="DJI" controls>
-            <source src="mp4/大疆视频.flv" type="video/flv">
-            <p>你的浏览器不支持MP4格式视频</p>
-        </video>
-    </div>
-    <div class="mp4" id="video">
-        <h1 class="video-text">MKV</h1>
-        <video class="DJI" controls>
-            <source src="mp4/大疆视频.mkv" type="video/mkv">
-            <p>你的浏览器不支持MP4格式视频</p>
-        </video>
-    </div>
-    <div class="mp4" id="video">
-        <h1 class="video-text">WMV</h1>
-        <video class="DJI" controls>
-            <source src="mp4/大疆视频.wmv" type="video/wmv">
-            <p>你的浏览器不支持MP4格式视频</p>
-        </video>
+</div>
+<div class="END">
+        <div class="end">
+            <a class="A">该网站仅限个人测试使用</a>
+            <a class="A">对外有限开放</a>    
+        </div>
     </div>
 </body>
 </html>
